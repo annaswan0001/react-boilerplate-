@@ -1,0 +1,11 @@
+{
+  "name": "withhooks",
+  "version": "0.1.0",
+  "description": "modern js with react and hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anna samoylenko",
+  "license": "ISC"
+}
