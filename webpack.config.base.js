@@ -13,11 +13,26 @@ module.exports = {
         test: /\.js$/,
         loader: "babel-loader",
         options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"],
+          presets: [
+            [
+              "@babel/preset-env",
+              {
+                targets: [
+                  "last 2 versions",
+                  "not dead",
+                  "not < 2%",
+                  "not ie 11"
+                ],
+                useBuiltIns: "entry"
+              }
+            ],
+            "@babel/preset-react"
+          ],
           plugins: [
             "@babel/plugin-proposal-class-properties",
-            "react-hot-loader/babel"
-        ],
+            "react-hot-loader/babel",
+            "@babel/plugin-syntax-dynamic-import"
+          ],
           exclude: /node_modules/
         }
       },

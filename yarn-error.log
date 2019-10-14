@@ -1,0 +1,79 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn format
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/a.kyzmenko/Desktop/react_boilerplate/package.json: Unexpected token } in JSON at position 1452
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "withhooks",
+    "version": "0.1.0",
+    "description": "modern js with react and hooks",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --config webpack.config.prod.js",
+      "dev": "webpack-dev-server --open --config  webpack.config.dev.js",
+      "dev:hot": "npm run dev -- --hot",
+      "test": "jest",
+      "format":"pretty-quick"
+    },
+    "author": "anna samoylenko",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/annaswan0001/react-boilerplate-.git"
+    },
+    "keywords": [],
+    "bugs": {
+      "url": "https://github.com/annaswan0001/react-boilerplate-/issues"
+    },
+    "homepage": "https://github.com/annaswan0001/react-boilerplate-#readme",
+    "devDependencies": {
+      "@babel/cli": "^7.6.3",
+      "@babel/core": "^7.6.3",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
+      "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+      "@babel/preset-env": "^7.6.3",
+      "@babel/preset-react": "^7.6.3",
+      "babel-loader": "^8.0.6",
+      "css-loader": "^3.2.0",
+      "html-webpack-plugin": "^3.2.0",
+      "style-loader": "^1.0.0",
+      "webpack": "^4.41.0",
+      "webpack-bundle-analyzer": "^3.5.2",
+      "webpack-cli": "^3.3.9",
+      "webpack-dev-server": "^3.8.2",
+      "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+      "@babel/polyfill": "^7.6.0",
+      "jest": "^24.9.0",
+      "prop-types": "^15.7.2",
+      "react": "^16.10.2",
+      "react-dom": "^16.10.2",
+      "react-hot-loader": "^4.12.15",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
