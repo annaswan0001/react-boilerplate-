@@ -7,6 +7,7 @@ class App extends Component {
         count: 0
     };
 
+ 
     render() {
         return (
             <div>
@@ -20,6 +21,7 @@ class App extends Component {
                 >
                     +
                 </button>
+               
                 <button
                     onClick={() =>
                         this.setState(state => ({
@@ -29,8 +31,8 @@ class App extends Component {
                 >
                     -
                 </button>
-                <h1> hello Anna?</h1>
-                asd asd asd
+                <h1> hello dsfs?</h1>
+                fhfhghfh fgdfg dhdhdh
             </div>
         );
     }
