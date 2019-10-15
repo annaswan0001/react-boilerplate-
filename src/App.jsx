@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import "./App.css";
-import { hot } from "react-hot-loader";
+     import "./App.css";
+import { hot } from "react-hot-loader"
 
 class App extends Component {
     state = {
         count: 0
     };
 
- 
-    render() {
+
+             render() {
+       
         return (
             <div>
                 {this.state.count}
